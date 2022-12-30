@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequiredArgsConstructor
-public class HomeController {
-
+public class HomeController
+{
     @RequestMapping("/")
-    public String home() {
+    public String home()
+    {
         return "redirect:/items";
     }
 }
